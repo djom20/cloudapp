@@ -2,6 +2,7 @@
     ./webpack.config.js
 */
 const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -19,10 +20,9 @@ module.exports = {
 		path: BUILD_DIR,
 		filename: 'bundle.js'
 	},
-	plugins: [HtmlWebpackPluginConfig],
+	plugins: [HtmlWebpackPluginConfig, new ExtractTextPlugin("styles.css")],
 	module: {
-		loaders: [
-			{
+		loaders: [{
 				test: /\.js$/,
 				loader: 'babel-loader',
 				exclude: /node_modules/
@@ -31,6 +31,10 @@ module.exports = {
 				test: /\.jsx$/,
 				loader: 'babel-loader',
 				exclude: /node_modules/
+			},
+			{
+				test: /\.css/,
+				loader: ExtractTextPlugin.extract("css-loader")
 			}
 		]
 	}
