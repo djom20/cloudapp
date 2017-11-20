@@ -19,7 +19,7 @@
 		"no-unused-vars": [
 			"error",
 			{
-				"varsIgnorePattern": "React"
+				"varsIgnorePattern": "[A-Z]"
 			}
 		],
         "indent": [
