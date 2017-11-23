@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class notFound extends React.Component {
+export default class notFound extends React.Component {
 	render() {
 		return (
 			<div class="row">
@@ -10,5 +10,3 @@ class notFound extends React.Component {
 		);
 	}
 }
-
-export default notFound;

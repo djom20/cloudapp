@@ -3,23 +3,23 @@ import ReactDOM from 'react-dom';
 
 import './loginBox.css';
 
-class loginBox extends React.Component {
+export default class loginBox extends React.Component {
 	render() {
 		return (
 			<div id="login" class="row">
 				<div class="col col-sm-12 col-lg-6 offset-lg-6">
 					<div class="alt-logo">
-						<img src="/public/images/brand.png" alt=""></img>
+						<img src="/public/images/brand.png" alt="" />
 					</div>
 					<form class="login-form hoverable card-panel">
 						<div class="row js-fields">
 							<div class="col col-sm-12">
-								<input placeholder="Usuario/Correo" id="username" type="email" class="form-control"></input>
+								<input placeholder="Usuario/Correo" id="username" type="email" class="form-control" />
 							</div>
 						</div>
 						<div class="row js-fields">
 							<div class="col col-sm-12">
-								<input placeholder="Contraseña" type="password" class="form-control"></input>
+								<input placeholder="Contraseña" type="password" class="form-control" />
 							</div>
 						</div>
 						<div class="row center-align js-fields">
@@ -27,16 +27,16 @@ class loginBox extends React.Component {
 								<button class="btn btn-primary" type="submit" name="action">Iniciar Session</button>
 								<div class="subsection">
 									<a href="#">¿Olvidastes tu contraseña?</a>
-									<hr></hr>
+									<hr />
 									<div class="socialicon clearfix">
 										<a href="#">
-											<img src="/public/images/social/facebook.png" alt="Facebook"></img>
+											<img src="/public/images/social/facebook.png" alt="Facebook" />
 										</a>
 										<a href="#">
-											<img src="/public/images/social/tweet.png" alt="Tweeter"></img>
+											<img src="/public/images/social/tweet.png" alt="Tweeter" />
 										</a>
 										<a href="#">
-											<img src="/public/images/social/in.png" alt="Linkin"></img>
+											<img src="/public/images/social/in.png" alt="Linkin" />
 										</a>
 									</div>
 								</div>
@@ -44,7 +44,8 @@ class loginBox extends React.Component {
 						</div>
 					</form>
 					<div class="helper">
-						<p>No tienes una cuenta? <a href="#">Solicitala ya!</a>
+						<p>
+							No tienes una cuenta? <a href="#">Solicitala ya!</a>
 						</p>
 						<p>Copyright AltiviaOT © Todos los derechos reservados.</p>
 						<p>
@@ -56,5 +57,3 @@ class loginBox extends React.Component {
 		);
 	}
 }
-
-export default loginBox;
