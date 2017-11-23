@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './appHeader.css';
+import './AppHeader.css';
 
-export default class appheader extends React.Component {
+export default class AppHeader extends React.Component {
 	render() {
 		return (
 			<div class="header">

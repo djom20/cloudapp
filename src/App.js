@@ -5,9 +5,9 @@ import { Switch } from 'react-router';
 import { Route } from 'react-router';
 import { browserHistory } from 'react-router';
 
-import loginBox from './components/loginBox/loginBox';
-import appBoard from './components/appBoard/appBoard';
-import notFound from './components/notFound/notFound';
+import LoginBox from './components/LoginBox/LoginBox';
+import AppBoard from './components/AppBoard/AppBoard';
+import NotFound from './components/NotFound/NotFound';
 
 import './../node_modules/bootstrap/dist/css/bootstrap.css';
 // import './App.css';
@@ -15,12 +15,12 @@ import './../node_modules/bootstrap/dist/css/bootstrap.css';
 export default class App extends React.Component {
 	render() {
 		return (
-			<BrowserRouter>
+			<BrowserRouter history={browserHistory}>
 				<Switch>
-					<Route exact path='/' component={appBoard} />
+					<Route exact path='/' component={AppBoard} />
 					{/* <Route exact path='/' component={loginBox} /> */}
-					{/* <Route exact path='/dashboard' component={dashboard} /> */}
-					<Route component={notFound} />
+					<Route exact path='/dashboard' component={AppBoard} />
+					<Route component={NotFound} />
 				</Switch>
 			</BrowserRouter>
 		);

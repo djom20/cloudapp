@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './loginBox.css';
+import './LoginBox.css';
 
-export default class loginBox extends React.Component {
+export default class LoginBox extends React.Component {
 	render() {
 		return (
 			<div id="login" class="row">

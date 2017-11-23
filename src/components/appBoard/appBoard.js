@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import appheader from '../appHeader/appHeader';
+import AppHeader from '../AppHeader/AppHeader';
 
-import './appBoard.css';
+import './AppBoard.css';
 
-export default class appBoard extends React.Component {
+export default class AppBoard extends React.Component {
 	render() {
 		return (
-			<div id="appBoard">
-				<appheader />
+			<div id="AppBoard">
+				<AppHeader />
 				<div class="others">
 					<h1>others</h1>
 				</div>
