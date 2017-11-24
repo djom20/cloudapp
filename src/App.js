@@ -10,7 +10,6 @@ import AppBoard from './components/AppBoard/AppBoard';
 import NotFound from './components/NotFound/NotFound';
 
 import './../node_modules/bootstrap/dist/css/bootstrap.css';
-// import './App.css';
 
 export default class App extends React.Component {
 	render() {
