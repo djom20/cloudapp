@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { Switch } from 'react-router';
+import { Route } from 'react-router';
+import { browserHistory } from 'react-router';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+import LoginBox from './components/LoginBox/LoginBox';
+import AppBoard from './components/AppBoard/AppBoard';
+import NotFound from './components/NotFound/NotFound';
+
+import './../node_modules/bootstrap/dist/css/bootstrap.css';
+
+export default class App extends React.Component {
+	render() {
+		return (
+			<BrowserRouter history={browserHistory}>
+				<Switch>
+					<Route exact path='/' component={AppBoard} />
+					{/* <Route exact path='/' component={loginBox} /> */}
+					<Route exact path='/dashboard' component={AppBoard} />
+					<Route component={NotFound} />
+				</Switch>
+			</BrowserRouter>
+		);
+	}
 }
-
-export default App;
