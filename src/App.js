@@ -9,7 +9,9 @@ import LoginBox from './components/LoginBox/LoginBox';
 import AppBoard from './components/AppBoard/AppBoard';
 import NotFound from './components/NotFound/NotFound';
 
+import './../node_modules/bootstrap/dist/css/bootstrap-reboot.css';
 import './../node_modules/bootstrap/dist/css/bootstrap.css';
+import './../node_modules/bootstrap/dist/css/bootstrap-grid.css';
 
 export default class App extends React.Component {
 	render() {
