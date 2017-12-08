@@ -1,0 +1,10 @@
+.DropEnterprise button {
+	background-color: transparent;
+	border: none;
+}
+
+.DropEnterprise button:hover {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.NavContent .nav.nav-tabs {
+    background-color: #2e3b4b;
+}
+
+.NavContent a {
+    color: #fff !important;
+}
+
+.NavContent .nav.nav-tabs .active.nav-link {
+    background-color: #2e3b4b;
+    border-bottom: none;
+    border-radius: 0;
+}

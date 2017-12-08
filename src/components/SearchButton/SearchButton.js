@@ -8,7 +8,7 @@ import './SearchButton.css';
 export default class SearchButton extends React.Component {
 	render() {
 		return (
-			<Button color="primary">Wed Nov 22 2017</Button>
+			<Button class="SearchButton" color="primary">Wed Nov 22 2017</Button>
 		);
 	}
 }

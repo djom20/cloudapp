@@ -1,0 +1,12 @@
+.AppHeader {
+    background-color: #2e3b4b;
+}
+
+.AppHeader a,
+.AppHeader li.nav-item span {
+    color: #fff !important;
+}
+
+.AppHeader .inline {
+    display: inline-block;
+}

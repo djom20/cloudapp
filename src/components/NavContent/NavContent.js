@@ -31,7 +31,7 @@ export default class NavContent extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div class="NavContent">
 				<Nav tabs>
 					<NavItem>
 						<NavLink

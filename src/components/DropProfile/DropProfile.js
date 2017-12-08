@@ -23,16 +23,12 @@ export default class DropProfile extends React.Component {
 
 	render() {
 		return (
-			<Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+			<Dropdown class="DropProfile" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
 				<DropdownToggle caret>
-					Dropdown
+					<img class="img-circle" src="https://www.gravatar.com/avatar/5a6482a701c73c212b5103285a975b48?d=https%3A%2F%2Fi.imgur.com%2F1nSFik0.png" />
 				</DropdownToggle>
 				<DropdownMenu>
-					<DropdownItem header>Header</DropdownItem>
-					<DropdownItem disabled>Action</DropdownItem>
-					<DropdownItem>Another Action</DropdownItem>
-					<DropdownItem divider />
-					<DropdownItem>Another Action</DropdownItem>
+					<DropdownItem>Log out</DropdownItem>
 				</DropdownMenu>
 			</Dropdown>
 		);

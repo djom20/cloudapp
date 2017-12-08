@@ -26,14 +26,14 @@ export default class AppHeader extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div class="AppHeader">
 				<Navbar color="faded" light expand="md">
 					<NavbarBrand href="/">reactstrap</NavbarBrand>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<NavLink href="/components/">Spanish</NavLink> - <NavLink href="https://github.com/reactstrap/reactstrap">English</NavLink>
+								<NavLink class="inline" href="/components/">Spanish</NavLink> <span>-</span> <NavLink class="inline" href="https://github.com/reactstrap/reactstrap">English</NavLink>
 							</NavItem>
 							<NavItem>
 								<DropEnterprise />
