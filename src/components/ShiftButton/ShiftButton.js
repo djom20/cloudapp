@@ -8,7 +8,7 @@ import './ShiftButton.css';
 export default class ShiftButton extends React.Component {
 	render() {
 		return (
-			<Button color="primary">Shift: Morning</Button>
+			<Button class="ShiftButton" color="default">Shift: Morning</Button>
 		);
 	}
 }

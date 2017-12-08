@@ -1,0 +1,15 @@
+.DropProfile button {
+    background-color: transparent;
+	border: none;
+	padding: 0 10px;
+}
+
+.DropProfile button:hover {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.DropProfile img.img-circle {
+    width: 40px;
+}

@@ -23,16 +23,20 @@ export default class DropEnterprise extends React.Component {
 
 	render() {
 		return (
-			<Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+			<Dropdown class="DropEnterprise" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
 				<DropdownToggle caret>
-					Dropdown
+					Enterprise Name
 				</DropdownToggle>
 				<DropdownMenu>
-					<DropdownItem header>Header</DropdownItem>
+					{/* <DropdownItem header>Header</DropdownItem>
 					<DropdownItem disabled>Action</DropdownItem>
 					<DropdownItem>Another Action</DropdownItem>
 					<DropdownItem divider />
-					<DropdownItem>Another Action</DropdownItem>
+					<DropdownItem>Another Action</DropdownItem> */}
+					<DropdownItem>Enterprise Name</DropdownItem>
+					<DropdownItem>Enterprise Name</DropdownItem>
+					<DropdownItem>Enterprise Name</DropdownItem>
+					<DropdownItem>Enterprise Name</DropdownItem>
 				</DropdownMenu>
 			</Dropdown>
 		);
